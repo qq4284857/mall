@@ -1,0 +1,6 @@
+com\mall\api\preview\entity\FileDocumentInfo.class
+com\mall\api\user\entity\UserDetail.class
+com\mall\api\upload\util\UploadUtil.class
+com\mall\api\utils\CreateMD5.class
+com\mall\api\upload\UploadResult.class
+com\mall\api\upload\entity\FileUpload.class

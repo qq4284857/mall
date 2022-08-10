@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <title>预览压缩包</title>
+    <script type="application/javascript" src="/file/static/jquery/jquery-3.6.0.min.js"></script>
+</head>
+<style>
+    li{
+        list-style: none;
+    }
+</style>
+<body>
+<div style="text-align: center">
+    <div th:each="z:${zip}" style="margin-top: 50px">
+        <a th:href="${z.url}" th:text="${z.fileName}"></a></br>
+    </div>
+</div>
+
+</body>
+</html>

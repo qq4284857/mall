@@ -1,0 +1,37 @@
+server:
+  port: 8084
+  servlet:
+    context-path: /file
+
+#文件上传大小限制
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 150MB
+  mvc:
+    static-path-pattern: /static/**
+  resources:
+    static-locations: classpath:/META-INF/resources/, classpath:/resources/, classpath:/static/, classpath:/public/, classpath:/templates/
+  # mysql数据库
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://106.75.126.136:3306/mall_file?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 1qaz2wsx!@#?
+#七牛云配置
+qiniu:
+  accessKey: XEGsnoZ5OsQtxPkK7IeFRzv5MGdN4IVHEQUwd4D0
+  secretKey: MZfIPYDaCgYSi9ALYUm4irAC01nSrP9HK93-LLlD
+  bucket: java-malls
+  fileUrl: http://image.ejiaoshop.cn/
+
+mybatis:
+  #  MyBatis扫描实体类
+  type-aliases-package: com.mall.file.**.entity
+  #  MyBatis Mapper 路径
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+

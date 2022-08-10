@@ -1,0 +1,13 @@
+com\mall\file\upload\config\UploadConfig.class
+com\mall\file\preview\util\PreviewSuffix.class
+com\mall\file\upload\service\impl\UploadServiceImpl.class
+com\mall\file\preview\service\PreviewService.class
+com\mall\file\MallFileApplication.class
+com\mall\file\preview\entity\ZipInfo.class
+com\mall\file\preview\controller\PreviewController.class
+com\mall\file\upload\service\UploadService.class
+com\mall\file\upload\controller\UploadController.class
+com\mall\file\preview\dao\PreviewDao.class
+com\mall\file\preview\config\PreviewConfig.class
+com\mall\file\preview\service\impl\PreviewServiceImpl.class
+com\mall\file\preview\util\PreviewUtil.class

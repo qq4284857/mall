@@ -1,0 +1,11 @@
+server:
+  port: 8084
+
+#rabbitmq配置
+spring:
+  rabbitmq:
+    host: 124.70.188.60
+    port: 5672
+    username: op
+    password: op
+    virtual-host: /op

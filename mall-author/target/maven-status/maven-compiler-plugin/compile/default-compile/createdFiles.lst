@@ -1,0 +1,10 @@
+com\mall\author\user\controller\UserController.class
+com\mall\author\user\dao\UserDao.class
+com\mall\author\user\controller\UsersController.class
+com\mall\author\user\service\UserService.class
+com\mall\author\MallAuthorApplication.class
+com\mall\author\user\config\ResourceServerConfig.class
+com\mall\author\user\config\SecuirtyConfig.class
+com\mall\author\user\config\JwtTokenStoreConfig.class
+com\mall\author\user\config\JwtTokenEnhancer.class
+com\mall\author\user\config\AuthorizationServerConfig.class

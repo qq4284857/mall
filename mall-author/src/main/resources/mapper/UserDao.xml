@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mall.author.user.dao.UserDao">
+    <select id="queryByUser" resultType="com.mall.api.user.entity.UserDetail">
+        select id,username,password,phoneNum,mail,createTime from mall_users  where username=#{username} and freeze=1
+    </select>
+   
+</mapper>

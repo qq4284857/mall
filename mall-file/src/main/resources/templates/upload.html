@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传</title>
+    <script type="application/javascript" src="/file/static/jquery/jquery-3.6.0.min.js"></script>
+    <script type="application/javascript" src="/file/static/jquery/jquery.form.min.js"></script>
+</head>
+<body>
+<form id="frm-reg" action="/file/upload/save" enctype="multipart/form-data" method="post">
+    <input type="file" name="file">
+    <input id="but" type="button" value="上传">
+</form>
+<script>
+$(document).ready(function (){
+$("#but").click(function (){
+    $("#frm-reg").ajaxSubmit(function (data) {
+
+        alert(data.Message);
+    });
+})
+})
+</script>
+
+</body>
+</html>

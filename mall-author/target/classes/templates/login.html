@@ -1,0 +1,17 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+<head>
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/login" method="post">
+    <input type="hidden" name="_csrf" th:value="${_csrf.token}" th:if="${_csrf}">
+    <label>账号</label><input type="text" name="username"></br>
+    <label>密码</label><input type="password" name="password"></br>
+    <label>自动登录</label><input type="checkbox" name="remember-me" value="true"></br>
+    <input type="submit" value="登录">
+</form>
+</body>
+</html>
